@@ -1,0 +1,5 @@
+package com.cg.goris.model;
+
+public enum ProductCategory {
+
+}

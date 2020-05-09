@@ -1,0 +1,17 @@
+package com.cg.goris.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+//import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.cg.goris.entity.RetailerInventoryEntity;
+import com.cg.goris.model.RetailerInventoryModel;
+
+@Repository
+public interface RetailerInventoryDao extends JpaRepository<RetailerInventoryEntity,Long> {
+  
+	boolean existsByProductId(long productId);
+	
+//	@Query("SELECT p.productId FROM RetailerInventoryModel p")
+	RetailerInventoryModel findByProductId(long productId);
+}

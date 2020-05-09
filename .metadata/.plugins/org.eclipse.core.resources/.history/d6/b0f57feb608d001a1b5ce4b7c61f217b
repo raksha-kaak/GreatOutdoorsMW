@@ -1,0 +1,5 @@
+package com.cg.goris.entity;
+
+public enum ProductCategory {
+	Camping_Equipment,Golf_Equipment,Mountaineering_Equipment,Outdoor_Protection,Personal_Accessories;
+}

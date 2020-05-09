@@ -1,0 +1,12 @@
+
+]
+java:S2699
+"-Add at least one assertion to this test case.(áùêÌùÿÿÿÿRBLOCKERZ
+CODE_SMELL
+Î
+java:S3577"ŸRename class "RetailerManagementSystemApplicationTests" to match the regular expression: '^((Test|IT)[a-zA-Z0-9]+|[A-Z][a-zA-Z0-9]*(Test|IT|TestCase|ITCase))$'(ñÁ²öûÿÿÿÿRMINORZ
+CODE_SMELL
+€
+java:S3578
+"RRename this method name to match the regular expression: '^test[A-Z][a-zA-Z0-9]*$'(áùêÌùÿÿÿÿRMINORZ
+CODE_SMELL
