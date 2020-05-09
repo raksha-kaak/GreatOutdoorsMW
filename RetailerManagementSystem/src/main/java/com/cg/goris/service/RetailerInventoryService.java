@@ -15,6 +15,6 @@ public interface RetailerInventoryService {
 	public RetailerInventoryModel findProductById(String id);
 	public List<RetailerInventoryModel> findAllProducts();
 	public void deleteProductById(String id);
-	public List<RetailerInventoryEntity> getAll(Long retailerId);
+//	public List<RetailerInventoryEntity> getAll(Long retailerId);
 
 }

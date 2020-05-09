@@ -1,0 +1,19 @@
+spring.application.name=retailer-service
+server.port=7557
+
+##Ribbon Config
+#retailer-service.ribbon.listOfServers=localhost:7001,localHost:7011
+#
+##Eureka Config
+#eureka.client.region = default
+#eureka.client.registryFetchIntervalSeconds = 5
+#eureka.client.serviceUrl.defaultZone=http://localhost:7000/eureka/
+
+# db oracleconfig
+spring.datasource.url = jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.username = admin
+spring.datasource.password = admin
+spring.jpa.show-sql = true
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.Oracle10gDialect

@@ -31,6 +31,9 @@ public class RetailerInventoryEntity {
 
 	@Column(name = "PRODUCT_RECEIVE_TIME", nullable = false)
 	private long productReceiveTimeStamp; 
+	
+	@Column(name = "PRODUCT_SALE_TIME", nullable = false)
+    private long productSaleTimeStamp; 
 
 
 	public long getRetailerId() {
@@ -89,6 +92,14 @@ public class RetailerInventoryEntity {
 	public void setProductReceiveTimeStamp(long productReceiveTimeStamp) {
 		this.productReceiveTimeStamp = productReceiveTimeStamp;
 	}
+
+    public long getProductSaleTimeStamp() {
+        return productSaleTimeStamp;
+    }
+
+    public void setProductSaleTimeStamp(long productSaleTimeStamp) {
+        this.productSaleTimeStamp = productSaleTimeStamp;
+    }
 
 
 	

@@ -12,6 +12,6 @@ import com.cg.goris.entity.RetailerInventoryEntity;
 @Repository
 public interface RetailerInventoryDao extends JpaRepository<RetailerInventoryEntity,String> {
   
- @Query("select r from RetailerInventoryEntity r where r.retailerId = ?1")
- List<RetailerInventoryEntity> getAll(Long retailerId);
+// @Query("select r from RetailerInventoryEntity r where r.retailerId = ?1")
+// List<RetailerInventoryEntity> getAll(Long retailerId);
 }

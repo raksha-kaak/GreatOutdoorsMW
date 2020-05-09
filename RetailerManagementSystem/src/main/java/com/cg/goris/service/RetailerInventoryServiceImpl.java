@@ -36,6 +36,7 @@ public class RetailerInventoryServiceImpl implements RetailerInventoryService{
 			result.setProductQuantity(source.getProductQuantity());
 			result.setTotalAmount(source.getTotalAmount());
 			result.setProductReceiveTimeStamp(source.getProductReceiveTimeStamp());
+			result.setProductSaleTimeStamp(source.getProductSaleTimeStamp());
 		}
 		return result;
 	}
@@ -51,6 +52,7 @@ public class RetailerInventoryServiceImpl implements RetailerInventoryService{
 			result.setProductQuantity(source.getProductQuantity());
 			result.setTotalAmount(source.getTotalAmount());
 			result.setProductReceiveTimeStamp(source.getProductReceiveTimeStamp());
+			result.setProductSaleTimeStamp(source.getProductSaleTimeStamp());
 		}
 		return result;
 	}
@@ -99,10 +101,10 @@ public class RetailerInventoryServiceImpl implements RetailerInventoryService{
 		return retailerDao.findAll().stream().map(entity->of(entity)).collect(Collectors.toList());
 	}
 
-    @Override
-    public List<RetailerInventoryEntity> getAll(Long retailerId) {
-        return retailerDao.getAll(retailerId);
-    }
+//    @Override
+//    public List<RetailerInventoryEntity> getAll(Long retailerId) {
+//        return retailerDao.getAll(retailerId);
+//    }
 
 //	@Override
 //	public RetailerInventoryModel findByProductId(long productId) {

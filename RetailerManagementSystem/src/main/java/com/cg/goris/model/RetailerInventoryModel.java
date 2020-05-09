@@ -9,6 +9,7 @@ public class RetailerInventoryModel {
 	private Integer productQuantity;
 	private Double totalAmount;
 	private long productReceiveTimeStamp;
+	private long productSaleTimeStamp;
 
 	
 //	@Override
@@ -61,6 +62,12 @@ public class RetailerInventoryModel {
 	public void setProductReceiveTimeStamp(long productReceiveTimeStamp) {
 		this.productReceiveTimeStamp = productReceiveTimeStamp;
 	}
+    public long getProductSaleTimeStamp() {
+        return productSaleTimeStamp;
+    }
+    public void setProductSaleTimeStamp(long productSaleTimeStamp) {
+        this.productSaleTimeStamp = productSaleTimeStamp;
+    }
 	
 	
 	

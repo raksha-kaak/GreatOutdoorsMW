@@ -43,10 +43,10 @@ public class RetailerInventoryController {
 		return new ResponseEntity<>(retailerService.findAllProducts(),HttpStatus.OK);
 	}
 	
-	@GetMapping("/{retailerId}")
-	public List<RetailerInventoryEntity> getRetailerId(@PathVariable Long retailerId){
-	    return retailerService.getAll(retailerId);
-	}
+//	@GetMapping("/{retailerId}")
+//	public List<RetailerInventoryEntity> getRetailerId(@PathVariable Long retailerId){
+//	    return retailerService.getAll(retailerId);
+//	}
 	
 	@PutMapping
 	public ResponseEntity<RetailerInventoryModel> updateTrainee(@RequestBody RetailerInventoryModel productStock) throws RetailerInventoryException {
